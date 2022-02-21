@@ -1,0 +1,5 @@
+def Help(N,M):
+    if (N%M==0):
+        return 1
+    else:
+        return 0
