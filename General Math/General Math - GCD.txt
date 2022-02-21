@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+long long gcd(long long m, long long n)
+{
+  
+    if (m == 0)
+       return m;
+    
+	if (n == 0)
+       return n;
+  
+    if (m == n)
+        return m;
+  
+  
+    if (m > n)
+        return gcd(m-n, n);
+    
+	return gcd(m, n-m);
+}
+int main()
+{
+	long long m,n;
+	cin>>m>>n;
+	
+	long long k=gcd(m,n);
+	cout<<k;
+	
+	return 0;
+}
