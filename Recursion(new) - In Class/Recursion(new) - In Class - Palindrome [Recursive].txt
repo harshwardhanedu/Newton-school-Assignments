@@ -1,0 +1,17 @@
+static boolean check_Palindrome(String str,int s, int e) 
+    { 
+
+//enter your code heretr
+String reverseStr = "";
+int strLength=str.length();
+for (int i=(strLength-1);i>=0;--i){
+    reverseStr =reverseStr+str.charAt(i);
+}
+if(str.toLowerCase().equals(reverseStr.toLowerCase())){
+    return true;
+}
+else{
+    return false;
+}
+ 
+    }
